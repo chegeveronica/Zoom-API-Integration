@@ -88,13 +88,13 @@ ZOOM_REDIRECT_URL =http://localhost:8080/api/meetings/callback
 ## Creating the PostgreSQL Database
 
 1. Enter the PostgreSQL CLI:
-   psql -U postgres
-   CREATE DATABASE your_db;
-   \q
+   psql -U postgres  
+   CREATE DATABASE your_db;  
+   \q  
 2. Ensure your .env file reflects the correct database name and credentials:
-   DB_URL=jdbc:postgresql://localhost:5432/your_db
-  DB_USERNAME=your_username
-  DB_PASSWORD=your_password
+   DB_URL=jdbc:postgresql://localhost:5432/your_db  
+  DB_USERNAME=your_username  
+  DB_PASSWORD=your_password  
 
 
    
