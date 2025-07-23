@@ -1,0 +1,16 @@
+zoom:
+  client-id: ${ZOOM_CLIENT_ID:fallback-value}
+  client-secret: ${ZOOM_CLIENT_SECRET:fallback-value}
+  redirect-uri: ${ZOOM_REDIRECT_URI:http:fallback-value}
+
+spring:
+  datasource:
+    url: ${DB_URL:}
+    username: ${DB_USERNAME:fallback-value}
+    password: ${DB_PASSWORD:fallback-value}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
